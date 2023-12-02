@@ -2,7 +2,7 @@
 
  The project tells the user whether an eye is looking right, left, up, or closed based on image classifier. I wanted to make a eyetracker to see where people are paying attention to on the screen, and if blue light effects the user.  
 
-![add image descrition here](direct image link here)
+![image](https://drive.google.com/uc?export=view&id=12cQDOJ39IpAPOFk8sf5eBTeZPqjfLDKh)
 
 ## The Algorithm
 
