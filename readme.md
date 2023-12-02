@@ -1,16 +1,19 @@
-# Project Name
+# Eye direction classifier
 
- Add short description of project here > 
+ The project tells the user whether an eye is looking right, left, up, or closed based on image classifier. I wanted to make a eyetracker to see where people are paying attention to on the screen, and if blue light effects the user.  
 
 ![add image descrition here](direct image link here)
 
 ## The Algorithm
 
-Add an explanation of the algorithm and how it works. Make sure to include details about how the code works, what it depends on, and any other relevant info. Add images or other descriptions for your project here. 
+It's a retrained Resnet 18 model, it uses a database of more than 3000 eye photos. It runs on imagenet.py and runs on the Jetson Nano. 
 
 ## Running this project
 
-1. Add steps for running this project.
-2. Make sure to include any required libraries that need to be installed for your project to run.
-
+1. Download Resnet 18 and lebels.txt
+2. Have Jetson inference installed or downloaded.
+3. In Jetson inference change classification Change directory using command ```cd jetson-inference/python/training/classification```
+4. Set net and dataset using ```NET=models/eyes``` ```DATASET=data/eyedataset```
+5. Run ```imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/_____.jpg ____.jpg```(the first jpg is the image your giving to the model and the second one is the one gets lebeled.
+6. Open the image to results (results will also be in the command line)
 [View a video explanation here](video link)
