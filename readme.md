@@ -10,7 +10,7 @@ It's a retrained Resnet 18 model, it uses a database of more than 3000 eye photo
 
 ## Running this project
 
-1. Download Resnet 18 and lebels.txt
+1. Download Resnet-18 and labels.txt
 2. Have Jetson inference installed or downloaded.
 3. In Jetson inference change classification Change directory using command ```cd jetson-inference/python/training/classification```
 4. Set net and dataset using ```NET=models/eyes``` ```DATASET=data/eyedataset```
