@@ -15,8 +15,9 @@ It's a retrained Resnet 18 model, it uses a database of more than 3000 eye photo
 3. In Jetson inference change directory in terminal using command ```cd /python/training/classification```
 4. Once in classifications,Move Resnet to the models directory, and Labels to data.
 5. Set net and dataset using ```NET=models/eyes``` ```DATASET=data/eyes```
-6. Run ```imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/_____.___```(fill in the blanks with the name of the image, that is the image your giving to the model.
-7. Open the image to results (results will also be in the command line)
+6. Run ```imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/_____.___``` (fill in the blanks with the name of the image you are giving to the model.)
+7. See results in the command line.
+
 [View a video explanation here](https://www.youtube.com/watch?v=6CJVVpkX6RI)
 
 
